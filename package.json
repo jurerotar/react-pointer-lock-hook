@@ -1,0 +1,53 @@
+{
+  "name": "react-pointer-lock-hook",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A lightweight and type-safe React hook for the Pointer Lock API",
+  "author": "Jure Rotar <hello@jurerotar.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/jurerotar/react-pointer-lock-hook#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jurerotar/react-pointer-lock-hook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jurerotar/react-pointer-lock-hook/issues"
+  },
+  "keywords": [],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/use-pointer-lock.d.ts",
+      "import": "./dist/use-pointer-lock.js"
+    }
+  },
+  "module": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "lint:check": "npx @biomejs/biome lint",
+    "lint": "npx @biomejs/biome lint --fix",
+    "format:check": "npx @biomejs/biome format",
+    "format": "npx @biomejs/biome format --write",
+    "type-check": "tsc --noEmit",
+    "test": "vitest",
+    "prepublishOnly": "npm run build",
+    "release": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/react": "19.0.12",
+    "@vitest/browser": "3.0.9",
+    "playwright": "1.51.1",
+    "tsup": "8.4.0",
+    "typescript": "5.8.2",
+    "vitest": "3.0.9",
+    "vitest-browser-react": "0.1.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}
