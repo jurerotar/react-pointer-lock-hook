@@ -1,18 +1,18 @@
-# react-pointer-lock
+# react-pointer-lock-hook
 
 A lightweight and type-safe React hook for the Pointer Lock API.
 
 ## Installation
 
 ```shell
-npm install react-pointer-lock
+npm install react-pointer-lock-hook
 ```
 
 ## Usage
 
 ```ts
 import { useRef } from 'react';
-import { usePointerLock } from 'react-pointer-lock-form';
+import { usePointerLock } from 'react-pointer-lock-hook';
 
 const MapViewer = () => {
   const mapRef = useRef<HTMLDivElement>(null);

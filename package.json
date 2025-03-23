@@ -1,6 +1,6 @@
 {
   "name": "react-pointer-lock-hook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "A lightweight and type-safe React hook for the Pointer Lock API",
   "author": "Jure Rotar <hello@jurerotar.com>",
@@ -23,7 +23,7 @@
       "import": "./dist/use-pointer-lock.js"
     }
   },
-  "module": "dist/index.js",
+  "module": "dist/use-pointer-lock.js",
   "files": ["dist"],
   "scripts": {
     "dev": "tsup --watch",
